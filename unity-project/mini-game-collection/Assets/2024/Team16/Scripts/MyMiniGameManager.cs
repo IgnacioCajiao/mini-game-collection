@@ -14,12 +14,11 @@ namespace MiniGameCollection.Games2024.Team16
 
         protected override void OnGameStart()
         {
-            Debug.Log("Game Started!");
+           
         }
 
         protected override void OnGameEnd()
         {
-            Debug.Log("Game Ended!");
             DetermineWinner();
         }
 

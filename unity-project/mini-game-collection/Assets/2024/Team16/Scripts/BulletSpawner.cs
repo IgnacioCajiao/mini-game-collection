@@ -26,7 +26,6 @@ namespace MiniGameCollection.Games2024.Team16
         protected override void OnGameStart()
         {
             ControlsActive = true;
-            Debug.Log("Game Started!");
         }
 
         protected override void OnGameEnd()

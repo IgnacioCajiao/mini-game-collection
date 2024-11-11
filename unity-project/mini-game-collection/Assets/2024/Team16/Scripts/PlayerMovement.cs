@@ -28,13 +28,11 @@ namespace MiniGameCollection.Games2024.Team16
         protected override void OnGameStart()
         {
             ControlsActive = true;
-            Debug.Log("Game Started!");
         }
 
         protected override void OnGameEnd()
         {
             ControlsActive = false;
-            Debug.Log("Game Ended!");
         }
 
         void Update()
@@ -69,7 +67,7 @@ namespace MiniGameCollection.Games2024.Team16
 
         void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.CompareTag("Ground"))
+            if (collision.gameObject.GetComponentInChildren<GroundTag>())
             {
                 isGrounded = true;
             }
