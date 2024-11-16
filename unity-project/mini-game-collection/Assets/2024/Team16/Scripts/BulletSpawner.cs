@@ -31,7 +31,6 @@ namespace MiniGameCollection.Games2024.Team16
         protected override void OnGameEnd()
         {
             ControlsActive = false;
-            Debug.Log("Game Ended!");
         }
 
         void Update()
@@ -44,14 +43,12 @@ namespace MiniGameCollection.Games2024.Team16
             {
                 if (playerInput.Action1.Down)
                 {
-                    Debug.Log("Shoot Action1 detected");
                     ShootBullet(spawnerP1);
                     lastShootTime = Time.time;
                 }
 
                 if (playerInput.Action2.Down)
                 {
-                    Debug.Log("Shoot Action2 detected");
                     ShootBullet(spawnerP2);
                     lastShootTime = Time.time;
                 }

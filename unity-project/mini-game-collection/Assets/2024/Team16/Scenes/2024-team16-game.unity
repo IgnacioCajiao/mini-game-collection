@@ -180,9 +180,10 @@ GameObject:
   - component: {fileID: 30801455}
   - component: {fileID: 30801454}
   - component: {fileID: 30801453}
+  - component: {fileID: 30801459}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,6 +324,18 @@ Transform:
   - {fileID: 1911393572}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30801459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30801452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19fd73a18e84e3478a3f667897159ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &56004917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,9 +1438,10 @@ GameObject:
   - component: {fileID: 255553887}
   - component: {fileID: 255553883}
   - component: {fileID: 255553888}
+  - component: {fileID: 255553889}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1568,6 +1582,18 @@ MonoBehaviour:
   duckHeight: 0.5
   normalHeight: 2
   fallMultiplier: 2.5
+--- !u!114 &255553889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255553881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d19fd73a18e84e3478a3f667897159ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &281771290
 GameObject:
   m_ObjectHideFlags: 0

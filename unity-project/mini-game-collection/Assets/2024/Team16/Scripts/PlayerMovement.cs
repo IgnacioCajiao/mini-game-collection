@@ -67,7 +67,7 @@ namespace MiniGameCollection.Games2024.Team16
 
         void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.GetComponentInChildren<GroundTag>())
+            if (collision.gameObject.GetComponent<GroundTag>())
             {
                 isGrounded = true;
             }

@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 namespace MiniGameCollection.Games2024.Team16
 {
     public class Bullet : MonoBehaviour
@@ -15,13 +14,12 @@ namespace MiniGameCollection.Games2024.Team16
 
         void OnCollisionEnter(Collision collision)
         {
-            // Check if the bullet collides with a player
-            if (collision.gameObject.CompareTag("Player"))
+            // Check if the bullet collides with a player using PlayerTag
+            if (collision.gameObject.GetComponent<PlayerTag>())
             {
                 // Add point to the player who shot the bullet
                 scoreKeeper.AddPoint(playerID);
 
-                // Destroy the bullet GameObject
                 Destroy(gameObject);
             }
         }
